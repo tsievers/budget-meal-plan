@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let i of list">
+    <span class="badge"
+      >{{ i.name }} pps: {{ i.price / i.servings }}, calPerServe:
+      {{ i.calPerServe * i.servings * (1 / i.price) }}</span
+    >
+  </li>
+</ul>
